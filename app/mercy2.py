@@ -273,16 +273,16 @@ def run_triage_dashboard():
                     st.error("Could not find coordinates for the given address")
 
     elif st.session_state.triage_stage == "show_hospitals":
-    try:
-    df = pd.read_csv(CSV_PATH)
-    df = df.rename(columns={
-        "Latitude": "lat",
-        "Longitude": "lon",
-        "Hospital": "name",
-        "Beds": "beds",
-        "Province": "province",
-        "Clinical capacity": "capacity"
-    })
+        try:
+            df = pd.read_csv(CSV_PATH)
+            df = df.rename(columns={
+                "Latitude": "lat",
+                "Longitude": "lon",
+                "Hospital": "name",
+                "Beds": "beds",
+                "Province": "province",
+                "Clinical capacity": "capacity"
+            })
     
     if "capacity" in df.columns:
         df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
