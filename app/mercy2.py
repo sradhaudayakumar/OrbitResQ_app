@@ -101,7 +101,7 @@ def get_matrix(_client, locations):
             profile="driving-car",
             metrics=["distance", "duration"],
             sources=[0],
-            destinations=list(range(1, len(locations)))
+            destinations=list(range(1, len(locations))))
     except Exception as e:
         st.warning(f"Matrix request failed: {e}")
         return None
