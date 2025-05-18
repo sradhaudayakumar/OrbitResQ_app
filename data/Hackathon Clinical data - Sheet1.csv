@@ -1,0 +1,130 @@
+Hospital,Province,Latitude,Longitude,Active in 2023?,Clinical capacity,Beds
+Acıbadem Üniversitesi Özel Acıbadem Atakent Hastanesi,Istanbul,41.0351583,28.7789001,3,3,262
+Altınbaş Üniversitesi Medical Park Bahçelievler Hastanesi,Istanbul,40.9959154,28.8633420,3,3,242
+Ankara Üniversitesi Ağız ve Diş Sağlığı Hastanesi,Ankara,39.9373340,32.8248541,3,1,13
+Avrasya Hastanesi,Istanbul,41.0767719,28.9066215,3,3,135
+Bahçeşehir Üniversitesi Medical Park Göztepe Hastanesi,Istanbul,40.9899712,29.0774765,3,3,357
+Başkent Üniversitesi İstanbul Sağlık Uygulama Ve Araştırma Merkezi,Istanbul,41.0241316,29.0410089,3,3,126
+Başkent Üniversitesi Konya Hastanesi,Konya,37.8843748,32.4564588,3,3,280
+BHT CLINIC Istanbul Tema Hospital,Istanbul,41.0595530,28.7743765,3,3,450
+Biruni Üniversitesi Tıp Fakültesi Hastanesi,Istanbul,40.9981144,28.7965119,3,3,300
+Çorum Özel Hastanesi,Çorum,40.5721532,34.9625686,3,3,130
+Cumhuriyet Üniversitesi Sağlık Hizmetleri Eğitim ve Araştırma Hastanesi,Sivas,39.7095928,37.0296839,3,3,1081
+Ensar Hospital,Istanbul,41.0498775,28.8757192,3,2,30
+İstanbul Aydın Üniversitesi VM Medical Park Florya Hastanesi,Istanbul,40.9903565,28.7973114,3,3,250
+İstanbul Bezmialem Vakıf Üniversitesi Sağlık Uygulama Ve Araştırma Merkezi,Istanbul,41.0190691,28.9358422,3,3,750
+Istanbul Okan University Hospital,Istanbul,40.8490131,29.3016463,3,3,300
+İstanbul Üniversitesi-Cerrahpaşa Cerrahpaşa Hastanesi,Istanbul,40.9709952,28.8069003,1,3,960
+İstanbul Yeditepe Üniversitesi Ağız ve Diş Sağlığı Uygulama Ve Araştırma Merkezi,Istanbul,41.0035552,28.9395885,3,1,2
+İstinye Üniversitesi Bahçeşehir Liv Hospital,Istanbul,41.0563190,28.6718158,3,3,187
+İstinye Üniversitesi Medical Park Gaziosmanpaşa Hastanesi,Istanbul,41.0589305,28.9079315,3,3,571
+Kağıthane Kızılay Hospital,Istanbul,41.0827371,28.9708335,3,2,75
+Kartal Kızılay Hospital,Istanbul,40.8909090,29.1818225,3,2,54
+Kayseri Kızılay Hospital,Kayseri,38.7134260,35.4931183,3,2,52
+Koç Üniversitesi Hastanesi,Istanbul,41.0237098,28.9174188,3,3,426
+Konya Kızılay Hospital,Konya,37.8668379,32.4992934,3,2,55
+Medistanbul Hospital,Istanbul,41.0931665,28.9049301,3,3,110
+Memorial Şişli Hastanesi,Istanbul,41.0615255,28.9723945,3,3,252
+Özel Hüma Kadın Hastalıkları ve Doğum Hastanesi,Kayseri,38.7134102,35.4955019,3,2,52
+Özel Acıbadem Altunizade Hastanesi,Istanbul,41.0192005,29.0456596,3,3,316
+Özel Acıbadem Kayseri Hastanesi,Kayseri,38.7157245,35.4997456,3,3,104
+Özel Acıbadem Maslak Hastanesi,Istanbul,41.1271441,29.0244901,3,3,198
+Özel Acıbadem Taksim Hastanesi,Istanbul,41.0415205,28.9822801,3,2,93
+Özel Adatıp Hastanesi,Sakarya,40.7757653,30.3543229,3,3,161
+Özel Aile Hastanesi,Bahçelievler,40.9975929,28.8672342,3,3,104
+Özel Akdeniz Şifa Hastanesi,Antalya,36.9442857,30.7087609,3,2,75
+Özel Anadolu Sağlık Merkezi Hastanesi,Kocaeli,40.8190655,29.3531483,3,3,201
+Özel Ankara Güven Hastanesi,Ankara,39.9044186,32.8544248,3,3,254
+Özel Ankara VM Medical Park Hastanesi,Ankara,39.9753214,32.8679652,3,3,100
+Özel Antalya Medical Park Hastane Kompleksi,Antalya,36.8564904,30.7467029,3,3,228
+Özel Ataköy Hastanesi,Istanbul,40.9857320,28.7814807,3,2,40
+Özel Avicenna Hastanesi,Ataşehir,41.0408237,28.8812408,3,3,103
+Özel Avicenna Hastanesi Ataşehir,Ataşehir,40.9793599,29.1088411,3,3,100
+Özel Bilge Hastanesi,Sakarya,41.0695778,28.9073876,3,2,40
+Özel Bir Nefes Hastanesi,Kırklareli,41.3930381,27.3588391,3,2,72
+Özel Buhara Hastanesi,Erzurum,39.8961032,41.2725407,3,3,150
+Özel Bursa Romatem Fizik Tedavi Ve Rehabilitasyon Hastanesi,Bursa,40.2006846,29.0374695,3,1,42
+Özel Bursa VM Medical Park Hastanesi,Bursa,40.1929244,29.0605478,3,3,270
+Özel Çakırtepe Hastanesi,Ordu,41.1396359,37.2819441,3,2,66
+Özel Çakmak Erdem Hastanesi,Ümraniye,41.0213846,29.1198471,3,3,124
+Özel Denizli Cerrahi Hastanesi,Denizli,37.7392167,29.1135124,3,3,110
+Özel Deva Hastanesi,Gaziantep,37.0641896,37.3947187,2,3,164
+Özel Doruk Yıldırım Hastanesi,Ankara,40.1917815,29.1099003,3,3,181
+Özel Dünyam Hastanesi,Kayseri,38.7228815,35.4804870,3,3,226
+Özel Emsey Hospital Hastanesi,Pendik,40.9241353,29.2893982,3,3,254
+Özel Esencan Hastanesi,Esenyurt,41.0333677,28.6766157,3,3,108
+Özel Güngören Hastanesi,Güngören,41.0269889,28.8717935,3,3,128
+Özel Hayat Hastanesi,Gaziantep,38.7256060,35.4811862,2,3,150
+Özel Hisar Intercontinental Hospital Hastanesi,Ümraniye,38.7227085,35.4825860,3,3,212
+Özel İrmet Hospital Hastanesi,Tekirdağ,41.2936682,27.9950887,3,3,149
+Özel İstanbul Florence Nightingale Hastanesi,Istanbul,41.0689677,28.9836747,3,3,251
+Özel Kadıköy Florence Nightingale Hastanesi,Kadıköy,40.9816239,29.0416215,3,2,79
+Özel Kocaeli VM Medical Park Hastanesi,Kocaeli,40.7592219,29.9805729,3,3,151
+Özel Konak Hastanesi,Kocaeli,40.7640758,29.9656200,3,3,102
+Özel Koru Hastanesi,Ankara,39.9024840,32.8120679,3,3,105
+Özel Liv Hospital Ankara Hastanesi,Ankara,39.9119398,32.8566229,3,3,158
+Özel Liv Hospital Gaziantep Hastanesi,Gaziantep,37.0702242,37.4141592,2,3,258
+Özel Liv Hospital Samsun Hastanesi,Samsun,41.3009865,36.3304986,3,2,60
+Özel Liv Hospital Ulus Hastanesi,Ulus,41.0609465,29.0286202,3,3,154
+Özel Lokman Hekim Esnaf Hastanesi,Muğla,36.6312269,29.1201454,3,3,108
+Özel Lokman Hekim Üniversitesi Ankara Hastanesi,Ankara,39.9564191,32.5835016,3,3,216
+Özel Lösante Çocuk ve Yetişkin Hastanesi,Ankara,39.8331358,32.7193613,3,3,400
+Özel Marmaris Yücelen Hastanesi,Muğla,36.8816998,28.2652477,3,2,75
+Özel Mecidiyeköy Çevre Hastanesi,Şişli,41.0672870,29.0014322,3,2,43
+Özel Medar Hastanesi Sakarya,Sakarya,40.7605915,30.3623007,3,3,108
+Özel Medicalpark Adana Hastanesi,Adana,36.9942796,35.3241398,3,3,153
+Özel Medicana international Hastanesi,Ankara,41.0129266,28.6450143,3,3,196
+Özel Medicana Ataköy Hastanesi,Ataköy,40.9762366,28.8561795,3,3,250
+Özel Medicana Ataşehir Hastanesi,Ataşehir,40.9835591,29.1066701,3,3,218
+Özel Medicana International İzmir Hastanesi,Bayraklı,38.4294823,27.1571947,3,3,240
+Özel Medicana Zincirlikuyu Hastanesi,Şişli,41.0714588,29.0152780,3,3,100
+Özel Medikar Hastanesi,Karabük,41.2164205,32.6478475,3,3,134
+Özel Medikent Hastanesi,Lüleburgaz,41.4077683,27.3327074,3,3,100
+Özel Medipol Mega Hastaneler Kompleksi,Bağcılar,41.0586963,28.8428424,3,3,810
+Özel Medistate Kavacık Hastanesi,Kavacık,41.0941051,29.1013703,3,3,113
+Özel Medline Hastanesi Adana,Adana,37.0532869,35.2545484,3,3,176
+Özel Memorial Ankara Hastanesi,Çankaya,39.9035921,32.8149693,3,3,230
+Özel Memorial Antalya Hastanesi,Kepez,36.9174663,30.6936215,3,3,114
+Özel Memorial Ataşehir Hastanesi,Ataşehir,40.9843955,29.1068353,3,3,143
+Özel Memorial Bahçelievler Hastanesi,Bahçelievler,40.9928900,28.8530119,3,3,320
+Özel Muğla Yücelen Hastanesi,Muğla,37.1772200,28.3720200,3,3,106
+Özel Optimed International Çorlu Hastanesi,Çorlu,41.1506008,27.8298391,3,2,75
+Özel Ordu Medical Park Hastanesi,Ordu,40.9782940,37.9052116,3,3,216
+Özel Ordu Umut Hastanesi,Ordu,40.9782940,37.8938165,3,2,90
+Özel Ortaca Yücelen Hastanesi,Ortaca,36.8450723,28.7683703,3,2,33
+Özel Ota-Jinemed Hastanesi,Beşiktaş,41.0487229,29.0004491,3,2,90
+Özel Parkhayat Hastanesi,Afyonkarahisar,38.7736593,30.5090687,3,3,152
+Özel Rami Hastanesi,Eyüpsultan,41.0480215,28.9201464,3,2,74
+Özel Samsun Büyük Anadolu Hastanesi,Samsun,41.2871065,36.3317566,3,2,75
+Özel Samsun VM Medical Park Hastanesi,Samsun,41.3335416,36.2716108,3,3,307
+Özel Şişli Kolan İnternational Hospital Hastanesi,Şişli,41.0646980,28.9803494,3,3,174
+Özel Trabzon Medical Park Karadeniz Hastanesi,Trabzon,40.9995871,39.7002898,3,3,131
+Özel Türkiye Gazetesi Hastanesi,Şişli,38.6308702,34.7379516,3,3,108
+Özel Versa Hastanesi,Nevşehir,38.6308702,34.7379516,3,2,54
+Özel VM Medical Park Maltepe Hastanesi,Maltepe,40.9170475,29.1454367,3,3,140
+Özel VM Medical Park Pendik Hastanesi,Pendik,40.8809170,29.2563492,3,3,505
+Özel Yenibosna Safa Hastanesi,Bahçelievler,40.9992799,28.8384583,3,3,114
+Özel Yüzüncüyıl Hastanesi,Kayseri ,39.8921662,32.8102507,3,2,76
+Private Kayseri Tekden Hospital,Kayseri,38.7227030,35.4825818,3,3,174
+Yeditepe Üniversitesi Sağlık Hizmetleri Eğitim Ve Araştırma Uygulama Merkezi,Kadıköy,41.0021007,29.0375391,3,3,184
+İskenderun Devlet Hastanesi,Hatay,36.5687414,36.1661404,1,2,31
+Hatay Eğitim ve Araştırma Hastanesi,Antakya/Hatay,36.2507678,36.1568134,1,3,550
+Hatay Dörtyol State Hospital,Hatay,36.8284,36.215,2,3,250
+Arsuz Devlet Hastanesi,Hatay,36.4037096,35.8764259,3,3,75
+Ozel Markasi Hastanesi,Kahramanmaraş,37.5703039,36.9591998,3,3,124
+Bossan Hospital,Gaziantep,37.0867914,37.4262962,3,3,500
+Anka Hastanesi,Gaziantep,37.0868994,37.3960177,3,3,150
+GAZİANTEP İL SAĞLIK MÜDÜRLÜĞÜ ŞEHİTKAMİL DEVLET HASTANESİ,Gaziantep,37.0893783,37.3640878,3,3,300
+Defa Life Hastanesi,Gaziantep,37.0271346,37.3308881,3,3,75
+ŞAHİNBEY ARAŞTIRMA ve UYGULAMA HASTANESİ,Gaziantep,37.0407789,37.3195670,3,3,140
+Kemal bayindir Private Hastanesi,Gaziantep,37.0476940,37.3321462,3,2,50
+NURDAĞI İLÇE DEVLET HASTANESİ,Gaziantep,37.1872820,36.7319255,0,2,75
+BAHÇE DEVLET HASTANESİ,Osmaniye,37.2008568,36.5703454,0,2,50
+Samandag Devlet HAstanesi,Hatay,36.0888800,36.0086408,2,2,70
+KIRIKHAN DEVLET HASTANESİ,Hatay,36.4886071,36.3360111,1,1,150
+Reyhanlı Devlet Hastanesi,Hatay,36.2428628,36.5608224,0,3,150
+MMT american private hospital,Gaziantep,36.2417586,36.5570941,0,3,111
+Araban İlçe Devlet Hastanesi,Gaziantep,37.4186426,37.6811911,0,3,100
+Adıyaman Üniversitesi Eğitim Ve Araştırma Hastanesi,Adıyaman,37.7676018,38.3228875,2,3,180
+Derik State Hospital,Mardin,37.3728318,40.2714003,2,,50
+Hôpital Mémorial Diyarbakir,Diyarbakir,37.9360445,40.1878607,3,3,141
