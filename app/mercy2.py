@@ -124,8 +124,6 @@ def get_route(_client, coords, avoid_geojson=None):
         return None
 
 # === TRIAGE DASHBOARD FUNCTIONS ===
-# ... [keep all existing triage dashboard functions unchanged] ...
-# === TRIAGE DASHBOARD FUNCTIONS ===
 def load_elderly_data(path):
     try:
         df = pd.read_csv(path)
@@ -284,13 +282,13 @@ def run_triage_dashboard():
                 "Clinical capacity": "capacity"
             })
     
-        if "capacity" in df.columns:
-        df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
-        else:
-            df["category"] = "Green"
+            if "capacity" in df.columns:
+                df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
+            else:
+                df["category"] = "Green"
         except Exception as e:
             st.error(f"Error loading hospital data: {e}")
-        return
+            return
 
         status_mapping = {
             "Red - Critical": "Red",
@@ -346,30 +344,32 @@ def run_triage_dashboard():
 
     display_phase_3_victim_detection()
 
-# === HOSPITAL FINDER FUNCTIONS ===
-try:
-    df = pd.read_csv(CSV_PATH)
-    # Ensure all required columns exist
-    df = df.rename(columns={
-        "Latitude": "lat",
-        "Longitude": "lon",
-        "Hospital": "name",
-        "Beds": "beds",
-        "Province": "province",
-        "Clinical capacity": "capacity"  # Make sure this column exists in your CSV
-    })
-    
-    # Add category column if it doesn't exist
-    if "capacity" in df.columns:
-        df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
-    else:
-        # Fallback if capacity data isn't available
-        df["category"] = "Green"  # Default all to Green if no capacity data
+def hospital_finder():
+    try:
+        df = pd.read_csv(CSV_PATH)
+        df = df.rename(columns={
+            "Latitude": "lat",
+            "Longitude": "lon",
+            "Hospital": "name",
+            "Beds": "beds",
+            "Province": "province",
+            "Clinical capacity": "capacity"
+        })
         
-    df = df[df[['lat', 'lon']].notnull().all(axis=1)]
-except Exception as e:
-    st.error(f"Error loading hospital data: {e}")
-    return
+        if "capacity" in df.columns:
+            df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
+        else:
+            df["category"] = "Green"
+            
+        df = df[df[['lat', 'lon']].notnull().all(axis=1)]
+    except Exception as e:
+        st.error(f"Error loading hospital data: {e}")
+        return
+
+    user_location = st.session_state.get("user_location")
+    if not user_location:
+        st.warning("Please set your location first")
+        return
 
     df["geo_distance"] = df.apply(lambda row: geodesic(user_location, (row["lat"], row["lon"])).km, axis=1)
     df = df[df["geo_distance"] <= MAX_DISTANCE_KM].reset_index(drop=True)
@@ -380,7 +380,6 @@ except Exception as e:
     client = get_ors_client()
     locations = [[user_location[1], user_location[0]]] + df[['lon', 'lat']].values.tolist()
 
-    # Updated matrix calculation with fallback
     matrix = get_matrix(client, locations)
     if matrix and 'distances' in matrix and 'durations' in matrix:
         df["distance_km"] = [d / 1000 for d in matrix["distances"][0]]
@@ -389,7 +388,7 @@ except Exception as e:
     else:
         st.warning("Routing service unavailable - using straight-line distances")
         df["distance_km"] = df["geo_distance"]
-        df["duration_min"] = df["distance_km"] * 2  # Approx 30 km/h speed
+        df["duration_min"] = df["distance_km"] * 2
         routing_available = False
 
     try:
@@ -524,8 +523,14 @@ except Exception as e:
 
     st_folium(m, width=700, height=500)
 
-# === MAIN APP === 
-# ... [keep the main() function unchanged] ...
+def main():
+    st.set_page_config(page_title="OrbitResQ", layout="wide")
+    page = st.sidebar.selectbox("Choose a page", ["Triage Dashboard", "Hospital Finder"])
+    
+    if page == "Triage Dashboard":
+        run_triage_dashboard()
+    elif page == "Hospital Finder":
+        hospital_finder()
 
 if __name__ == "__main__":
     main()
