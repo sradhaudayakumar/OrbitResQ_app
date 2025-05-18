@@ -1,0 +1,12 @@
+
+### Key Features:
+1. **Clear API Key Instructions** - Separates local vs production use
+2. **Security First** - Never hardcodes API keys
+3. **Minimal Dependencies** - Works with vanilla JS
+4. **Deployment Ready** - GitHub Pages specific instructions
+
+Would you like me to add any specific:
+- Screenshots section?
+- Detailed API documentation?
+- Contribution guidelines?
+- Badges (CI, license, etc.)?
