@@ -1,0 +1,13 @@
+streamlit
+streamlit-folium
+pandas
+numpy
+folium
+geopy
+geopandas
+shapely
+openrouteservice
+Pillow
+requests
+pyproj
+rtree
