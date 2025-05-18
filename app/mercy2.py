@@ -274,19 +274,23 @@ def run_triage_dashboard():
 
     elif st.session_state.triage_stage == "show_hospitals":
         try:
-            df = pd.read_csv(CSV_PATH)
-            df = df.rename(columns={
-                "Latitude": "lat",
-                "Longitude": "lon",
-                "Hospital": "name",
-                "Beds": "beds",
-                "Province": "province",
-                "Clinical capacity": "capacity"
-            })
-            df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
-        except Exception as e:
-            st.error(f"Error loading hospital data: {e}")
-            return
+    df = pd.read_csv(CSV_PATH)
+    df = df.rename(columns={
+        "Latitude": "lat",
+        "Longitude": "lon",
+        "Hospital": "name",
+        "Beds": "beds",
+        "Province": "province",
+        "Clinical capacity": "capacity"
+    })
+    
+    if "capacity" in df.columns:
+        df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
+    else:
+        df["category"] = "Green"
+except Exception as e:
+    st.error(f"Error loading hospital data: {e}")
+    return
 
         status_mapping = {
             "Red - Critical": "Red",
@@ -343,20 +347,29 @@ def run_triage_dashboard():
     display_phase_3_victim_detection()
 
 # === HOSPITAL FINDER FUNCTIONS ===
-def run_hospital_finder(user_location):
-    try:
-        df = pd.read_csv(CSV_PATH)
-        df = df.rename(columns={
-            "Latitude": "lat",
-            "Longitude": "lon",
-            "Hospital": "name",
-            "Beds": "beds",
-            "Province": "province"
-        })
-        df = df[df[['lat', 'lon']].notnull().all(axis=1)]
-    except Exception as e:
-        st.error(f"Error loading hospital data: {e}")
-        return
+try:
+    df = pd.read_csv(CSV_PATH)
+    # Ensure all required columns exist
+    df = df.rename(columns={
+        "Latitude": "lat",
+        "Longitude": "lon",
+        "Hospital": "name",
+        "Beds": "beds",
+        "Province": "province",
+        "Clinical capacity": "capacity"  # Make sure this column exists in your CSV
+    })
+    
+    # Add category column if it doesn't exist
+    if "capacity" in df.columns:
+        df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
+    else:
+        # Fallback if capacity data isn't available
+        df["category"] = "Green"  # Default all to Green if no capacity data
+        
+    df = df[df[['lat', 'lon']].notnull().all(axis=1)]
+except Exception as e:
+    st.error(f"Error loading hospital data: {e}")
+    return
 
     df["geo_distance"] = df.apply(lambda row: geodesic(user_location, (row["lat"], row["lon"])).km, axis=1)
     df = df[df["geo_distance"] <= MAX_DISTANCE_KM].reset_index(drop=True)
