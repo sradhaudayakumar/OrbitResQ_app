@@ -284,13 +284,13 @@ def run_triage_dashboard():
                 "Clinical capacity": "capacity"
             })
     
-    if "capacity" in df.columns:
+        if "capacity" in df.columns:
         df["category"] = df["capacity"].apply(lambda x: "Red" if x >= 3 else ("Yellow" if x == 2 else "Green"))
-    else:
-        df["category"] = "Green"
-except Exception as e:
-    st.error(f"Error loading hospital data: {e}")
-    return
+        else:
+            df["category"] = "Green"
+        except Exception as e:
+            st.error(f"Error loading hospital data: {e}")
+        return
 
         status_mapping = {
             "Red - Critical": "Red",
