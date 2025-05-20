@@ -1,13 +1,13 @@
-streamlit
-streamlit-folium
-pandas
-numpy
-folium
-geopy
-geopandas
-shapely
-openrouteservice
-Pillow
-requests
-pyproj
-rtree
+streamlit==1.28.0
+pandas==2.0.3
+geopy==2.3.0
+requests==2.31.0
+openrouteservice==2.3.0
+geopandas==0.13.2
+folium==0.14.0
+streamlit-folium==0.15.1
+shapely==2.0.1
+matplotlib==3.7.2  # ← THIS FIXES THE ERROR
+skyfield==1.46
+Pillow==10.0.0
+numpy==1.24.3
