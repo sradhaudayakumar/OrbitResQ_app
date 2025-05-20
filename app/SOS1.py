@@ -25,7 +25,7 @@ Image.MAX_IMAGE_PIXELS = None
 
 # Paths for Triage Dashboard
 CSV_PATH = r"C:\Users\udaya\OneDrive\Desktop\AIresque\Hackathon Clinical data - Sheet1.csv"
-ORS_API_KEY = "5b3ce3597851110001cf62482769c93c1a9e42e5a3c52922d8885197"
+ORS_API_KEY = st.secrets["ORS_API_KEY"]  # Safe for Streamlit Cloud
 SHAKEMAP_PATH = r"C:\Users\udaya\OneDrive\Desktop\AIresque\intensity_contours_turkey.json"
 MAG_CSV_PATH = r"C:\Users\udaya\OneDrive\Desktop\AIresque\magnitude.csv"
 ELDERLY_CSV_PATH = r"C:\Users\udaya\OneDrive\Desktop\AIresque\elderly_population_estimate.csv"
