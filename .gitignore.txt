@@ -28,3 +28,5 @@ wheels/
 *.geojson
 *.json
 *.png
+
+.streamlit/secrets.toml
